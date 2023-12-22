@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import Header from './components/Header';
+import Column from './components/Column';
+import Footer from './components/Footer';
 import './App.css';
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+</style>
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header dogName="Scrappy" />
+      <Column columnTitle="Walks"/>
+      <Footer />
     </div>
+
   );
 }
 
