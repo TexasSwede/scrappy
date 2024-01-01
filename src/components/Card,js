@@ -1,0 +1,18 @@
+import { useEventListContext } from "../EventProvider";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCirclePlus } from '@fortawesome/sharp-regular-svg-icons';
+
+function Card(props) {
+    return (
+        <card-wrapper>
+            <card key={index}>
+                <card-header>{event.type}</card-header>
+                <card-body>
+                    {event.time.toLocaleTimeString('en-us', { hour: 'numeric', minute: 'numeric'})}
+                </card-body>
+            </card>
+        </card-wrapper>
+    );
+}
+
+export default Card;

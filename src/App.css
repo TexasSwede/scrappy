@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 .App {
-    background-color: #d3d1d1;
-    color: rgb(38, 47, 63);
-    text-align: center;
+    background-color: #fffdfd;
+    color: rgb(226, 226, 226);
 }
 
 
@@ -23,7 +24,6 @@
 
 .App-header {
   background-color: #505868;
-  xmin-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,20 +40,82 @@
     color: white;
 }
 
+column-header {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  color:#141414;
+  margin: 0;
+  padding-bottom: 2px;
+  background-color:rgb(247, 185, 17);
+}
+
+.addButton {
+  margin: 4px 0 4px 10px;
+  float: left;
+  font-size: 24px;
+  color: rgb(22,22,22);
+}
+
+.columnWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.half-width {
+  flex: 1;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+card-wrapper {
+  display:inline-block;
+  width: calc(100% - 20px);
+  padding: 10px 10px;
+}
+card {
+  display:block;
+  width: auto;
+  color: rgb(22,22,22);
+  font-weight: 400;
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 4px;
+}
+
+card-header {
+  display:block;
+  width: auto;
+  background-color:rgb(218, 218, 218);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: auto;
+}
+
+card-body {
+  padding:  6px 8px;
+  display: inline-block;
+}
+card-row {
+  text-align: left;
+  display: inline-block;
+}
+
+card-row > card-label {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
 .copyright {
-    font-size: 0.8em;
+  text-align: center;
+    font-size: 10px;
     padding-bottom: 4px;
     padding-top: 2px;
     background-color:#505868;
     color: white;
     font-family: Roboto;
-    font-weight: 600;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    font-weight: 400;
 }
